@@ -35,7 +35,7 @@ if uploaded_file is not None:
 
     # แสดงภาพที่มี bounding box
     result_img = results[0].plot()  # วาดกล่อง
-    st.image(result_img, caption="✅ Detection Result", use_container_width=True)
+    st.image(result_img, caption="✅ Detection Result", use_column_width=True)
 
     # แสดงผลแบบตาราง (class + conf)
     boxes = results[0].boxes
